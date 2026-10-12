@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>プライバシーポリシー | TabiPin</title>
+<meta name="description" content="TabiPin（タビピン）のプライバシーポリシーです。">
+<style>
+  :root {
+    --bg: #F7F4EE;
+    --surface: #FFFFFF;
+    --ink: #22302A;
+    --muted: #66726B;
+    --accent: #2D4A3E;
+    --rule: #DDD7CA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141A17;
+      --surface: #1B231F;
+      --ink: #E6E8E3;
+      --muted: #9AA69F;
+      --accent: #9CC9B2;
+      --rule: #2C3832;
+    }
+  }
+
+  @counter-style paren-decimal {
+    system: extends decimal;
+    prefix: "（";
+    suffix: "）";
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.95;
+    -webkit-text-size-adjust: 100%;
+    overflow-wrap: anywhere;
+    line-break: strict;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 4rem;
+    padding-left: max(1.25rem, env(safe-area-inset-left));
+    padding-right: max(1.25rem, env(safe-area-inset-right));
+    padding-bottom: max(4rem, calc(env(safe-area-inset-bottom) + 2rem));
+  }
+
+  header.site {
+    padding-bottom: 1.75rem;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 2rem;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: .02em;
+  }
+  h1 {
+    margin: 1.5rem 0 .25rem;
+    font-size: 1.9rem;
+    line-height: 1.4;
+    letter-spacing: .04em;
+  }
+  .revised { margin: 0; color: var(--muted); font-size: .85rem; }
+
+  .lead { margin: 0 0 2rem; }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: .9rem 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+  nav.toc summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  nav.toc ol {
+    margin: .8rem 0 .2rem;
+    padding: 0;
+    list-style: none;
+    columns: 2 260px;
+    column-gap: 2rem;
+    font-size: .9rem;
+    line-height: 1.8;
+  }
+  nav.toc a { color: var(--ink); text-decoration: none; display: block; padding: .15rem 0; }
+  nav.toc summary { padding: .2rem 0; }
+  nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); text-decoration: underline; }
+  nav.toc .n { color: var(--muted); margin-right: .4em; font-size: .85em; }
+
+  section { margin: 0 0 2.4rem; }
+  h2 {
+    margin: 0 0 .7rem;
+    padding-left: .8rem;
+    border-left: 4px solid var(--accent);
+    font-size: 1.12rem;
+    line-height: 1.6;
+  }
+  h2 .no { color: var(--accent); margin-right: .6em; }
+
+  p { margin: 0 0 .8rem; }
+  ol.p {
+    margin: 0;
+    padding-left: 1.7em;
+    list-style: decimal;
+  }
+  ol.p > li { margin-bottom: .6rem; padding-left: .2em; }
+  ol.p > li::marker { color: var(--muted); }
+  ol.i {
+    margin: .4rem 0 .2rem;
+    padding-left: 2.2em;
+    list-style: paren-decimal;
+  }
+  ol.i > li { margin-bottom: .2rem; }
+
+  footer.end {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  footer.end p { margin: 0 0 .3rem; }
+  .sign { text-align: right; margin: 2rem 0 0; }
+
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  @media (max-width: 600px) {
+    body { font-size: 15px; line-height: 1.9; }
+    .wrap { padding-top: 1.5rem; }
+    header.site { padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+    h1 { font-size: 1.5rem; margin-top: 1.1rem; }
+    h2 { font-size: 1.02rem; padding-left: .65rem; border-left-width: 3px; }
+    h2 .no { display: block; font-size: .8rem; margin: 0 0 .1rem; }
+    section { margin-bottom: 2rem; }
+    nav.toc { padding: .7rem .9rem; margin-bottom: 2rem; }
+    nav.toc ol { columns: 1; font-size: .92rem; line-height: 1.6; }
+    nav.toc a { padding: .4rem 0; }
+    ol.p { padding-left: 1.5em; }
+    ol.i { padding-left: 1.9em; }
+    .sign { margin-top: 1.5rem; }
+  }
+  @media print {
+    body { background: #fff; color: #000; }
+    nav.toc { display: none; }
+    .wrap { padding: 0; max-width: none; }
+    section { break-inside: avoid-page; }
+  }
+
+  .svc { display: grid; gap: .8rem; margin: .8rem 0 .4rem; }
+  .svc .item {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: .8rem 1rem;
+  }
+  .svc .nm { margin: 0 0 .4rem; font-weight: 700; color: var(--accent); line-height: 1.6; }
+  .svc dl, .meta { margin: 0; display: grid; grid-template-columns: 7.5em 1fr; gap: .25rem .8rem; font-size: .93rem; line-height: 1.8; }
+  .svc dt, .meta dt { color: var(--muted); }
+  .svc dd, .meta dd { margin: 0; }
+  .meta {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: .8rem 1rem;
+    margin: .2rem 0 0;
+  }
+  a.ext { color: var(--accent); }
+  @media (max-width: 600px) {
+    .svc dl, .meta { grid-template-columns: 1fr; gap: 0; }
+    .svc dt, .meta dt { margin-top: .5rem; font-size: .8rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <div class="brand">
+    <span>TabiPin</span>
+  </div>
+  <h1>プライバシーポリシー</h1>
+  <p class="revised">2026年10月11日 制定</p>
+</header>
+
+<p class="lead">Naoki Mineo（以下「運営者」といいます。）は、運営者が提供するiOSアプリ「TabiPin（タビピン）」および本アプリに関連して運営者が提供する一切のサービス（以下「本サービス」といいます。）における、ユーザーの個人情報を含む利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。本ポリシーで用いる用語は、特に定めのない限り、本サービスの利用規約（以下「利用規約」といいます。）と同じ意味を持ちます。</p>
+
+<nav class="toc" aria-label="目次">
+  <details>
+    <summary>目次</summary>
+    <ol>
+      <li><a href="#a1"><span class="n">第1条</span>基本方針・適用範囲</a></li>
+      <li><a href="#a2"><span class="n">第2条</span>事業者情報</a></li>
+      <li><a href="#a3"><span class="n">第3条</span>取得する情報と取得方法</a></li>
+      <li><a href="#a4"><span class="n">第4条</span>利用目的</a></li>
+      <li><a href="#a5"><span class="n">第5条</span>第三者提供</a></li>
+      <li><a href="#a6"><span class="n">第6条</span>委託・外部サービス・外国への提供</a></li>
+      <li><a href="#a7"><span class="n">第7条</span>保存期間と削除</a></li>
+      <li><a href="#a8"><span class="n">第8条</span>安全管理措置</a></li>
+      <li><a href="#a9"><span class="n">第9条</span>ユーザーの権利と請求手続</a></li>
+      <li><a href="#a10"><span class="n">第10条</span>位置情報の許可と情報提供の任意性</a></li>
+      <li><a href="#a11"><span class="n">第11条</span>子どもの情報</a></li>
+      <li><a href="#a12"><span class="n">第12条</span>Cookie・広告識別子等</a></li>
+      <li><a href="#a13"><span class="n">第13条</span>本ポリシーの変更</a></li>
+      <li><a href="#a14"><span class="n">第14条</span>お問い合わせ窓口</a></li>
+    </ol>
+  </details>
+</nav>
+
+<main>
+
+<section id="a1">
+  <h2><span class="no">第1条</span>基本方針・適用範囲</h2>
+  <ol class="p">
+    <li>運営者は、個人情報の保護に関する法律（以下「個人情報保護法」といいます。）その他の関係法令を遵守し、利用者情報を適切に取り扱います。</li>
+    <li>本ポリシーにおいて「利用者情報」とは、ユーザーの識別に係る情報、本サービスの利用により入力・生成・蓄積される情報、およびユーザーの端末に関連する情報であって、運営者が取得するものをいいます。このうち、個人情報保護法に定める個人情報に該当するものを「個人情報」といいます。</li>
+    <li>本ポリシーは、本サービスに適用されます。第6条に定める外部サービスにおける情報の取扱いについては、各提供者のプライバシーポリシー等が適用されます。</li>
+    <li>本ポリシーと利用規約の内容が矛盾する場合、個人情報の取扱いについては、本ポリシーが優先して適用されます。</li>
+  </ol>
+</section>
+
+<section id="a2">
+  <h2><span class="no">第2条</span>事業者情報</h2>
+  <dl class="meta">
+    <dt>運営者</dt><dd>Naoki Mineo（個人）</dd>
+    <dt>住所</dt><dd>ご請求があった場合、遅滞なく開示します。</dd>
+    <dt>責任者</dt><dd>個人情報の取扱いに関する責任者は、運営者本人です。</dd>
+    <dt>連絡先</dt><dd>第14条に記載のお問い合わせ窓口</dd>
+  </dl>
+</section>
+
+<section id="a3">
+  <h2><span class="no">第3条</span>取得する情報と取得方法</h2>
+  <p>運営者は、本サービスにおいて、次の情報を取得します。</p>
+  <ol class="p">
+    <li>ユーザーが入力・提供する情報
+      <ol class="i">
+        <li>しおりに関する情報（タイトル、開始日、終了日）</li>
+        <li>スポットに関する情報（名称、住所、緯度経度、開始時間、終了時間、メモ）</li>
+        <li>会員登録に関する情報（メールアドレス。Apple IDで登録した場合は、Appleから提供される識別子およびメールアドレス（Appleのプライベートリレーによるアドレスを含みます。））。なお、メールアドレスで登録した場合のパスワードは、認証サービス（Firebase Authentication）が管理し、運営者のサーバーには保存されません。</li>
+        <li>お問い合わせの内容およびメールアドレス（お問い合わせフォームに入力された情報）。なお、お問い合わせフォームには、メールアドレス以外の個人情報（パスワード、住所など）を入力しないでください。</li>
+      </ol>
+    </li>
+    <li>アカウントに関する情報<br>
+      アカウントを識別するための識別子（Firebase Authenticationが発行するユーザーID）、認証方式（匿名・Apple ID・メールアドレス）、アカウントの作成・更新日時を取得します。会員登録を行わない匿名アカウントでも、識別子は発行されます。</li>
+    <li>アクセス・端末に関する情報（本サービスの利用に伴い自動的に取得する情報）<br>
+      IPアドレス、アクセス日時、リクエストの内容（アクセス先、処理結果など）、アプリのバージョン、ユーザーエージェント情報（OSや通信ライブラリの種類など）を、運営者のサーバーが取得します。</li>
+    <li>エラー情報<br>
+      本アプリで不具合やクラッシュが発生した場合に、エラーの内容、発生箇所、端末の種類、OSおよびアプリのバージョン、発生日時、発生前後の操作や通信の記録（アクセス先のURLなど）、アプリの利用セッションに関する情報、アプリのインストールごとに自動で付与される匿名の識別子、IPアドレスなどが、エラー監視サービス（Sentry）に送信されることがあります。アカウントの識別子（ユーザーID）やメールアドレスを、運営者が意図してSentryに送信することはありません。</li>
+    <li>位置情報（現在地）<br>
+      ユーザーが端末の設定で許可した場合に限り、端末の現在地を取得します。現在地は、地図の初期表示や現在地への移動など、地図の表示位置を決めるために端末内でのみ利用し、運営者のサーバーに送信・保存することはありません。なお、ユーザーがスポットとして保存した場所の緯度経度は、第1号のスポットに関する情報として保存されます。</li>
+    <li>場所の検索に関する情報<br>
+      スポットを追加する際に入力した検索キーワードは、Appleが提供する場所の検索機能に送信され、Appleにより処理されます。運営者は、検索キーワードを取得・保存しません。また、地図上の地点を指定してスポットを追加する際、その地点の緯度経度は、住所を取得するためにAppleが提供する機能に送信され、Appleにより処理されます。</li>
+    <li>取得しない情報<br>
+      運営者は、氏名、生年月日、電話番号、クレジットカード情報などを、本サービスの利用にあたって必須の情報として取得しません（お問い合わせの際などにユーザー自身が入力した場合を除きます。）。また、現時点では、広告識別子（IDFA）を取得せず、広告配信や行動の追跡・解析を目的としたSDKを使用していません。</li>
+    <li>自由記載欄の内容<br>
+      メモなどの自由記載欄に入力された内容（病歴、信条など、個人情報保護法上の要配慮個人情報に当たりうる内容を含みます。）は、ユーザー自身の判断で入力されるものであり、運営者がこれらの情報の入力を求めるものではありません。ユーザーは、要配慮個人情報その他の重要な情報を入力しないでください。</li>
+  </ol>
+</section>
+
+<section id="a4">
+  <h2><span class="no">第4条</span>利用目的</h2>
+  <ol class="p">
+    <li>運営者は、利用者情報を次の目的で利用します。
+      <ol class="i">
+        <li>本サービスの提供（認証、メールアドレスの確認、しおりやスポットの保存・表示、再ログイン時のデータの復元など）</li>
+        <li>不正利用・不正アクセスの防止、利用回数の制限、セキュリティの確保</li>
+        <li>不具合の調査・修正、本サービスの品質向上および機能の改善、アプリのバージョンの確認（旧バージョンの利用停止の判定を含みます。）</li>
+        <li>お問い合わせへの対応</li>
+        <li>利用規約その他の規約に違反する行為への対応</li>
+        <li>利用規約・本ポリシーの変更、サービスの停止・終了その他の重要なお知らせの通知</li>
+        <li>個人を特定できない形に加工した統計情報の作成</li>
+      </ol>
+    </li>
+    <li>運営者は、利用目的を、変更前の利用目的と関連性を有すると合理的に認められる範囲を超えて変更しません。利用目的を変更した場合は、変更後の目的を本アプリ上または本ポリシーを掲載するウェブページで公表します。</li>
+    <li>運営者は、法令に基づく場合を除き、ユーザーの同意なく、あらかじめ特定した利用目的の達成に必要な範囲を超えて個人情報を取り扱いません。</li>
+  </ol>
+</section>
+
+<section id="a5">
+  <h2><span class="no">第5条</span>第三者提供</h2>
+  <ol class="p">
+    <li>運営者は、次の場合を除き、あらかじめユーザーの同意を得ることなく、個人データを第三者に提供しません。
+      <ol class="i">
+        <li>ユーザーの同意がある場合</li>
+        <li>法令に基づく場合</li>
+        <li>人の生命、身体または財産の保護のために必要がある場合であって、ユーザーの同意を得ることが困難であるとき</li>
+        <li>公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって、ユーザーの同意を得ることが困難であるとき</li>
+        <li>国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、ユーザーの同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき</li>
+        <li>事業の譲渡その他の事由による事業の承継に伴って個人データが提供される場合（利用規約第25条に定めるとおりです。）</li>
+        <li>利用目的の達成に必要な範囲で、個人データの取扱いの全部または一部を委託する場合（次条に定めるとおりです。）</li>
+      </ol>
+    </li>
+    <li>運営者は、個人データを第三者と共同利用しません。</li>
+  </ol>
+</section>
+
+<section id="a6">
+  <h2><span class="no">第6条</span>委託・外部サービス・外国への提供</h2>
+  <ol class="p">
+    <li>本サービスは、次の事業者が提供するサービスを利用しています。運営者が取扱いを委託する場合のほか、ユーザーと事業者との間で直接情報が取り扱われる場合があります。
+      <div class="svc">
+        <div class="item">
+          <p class="nm">Google LLC（米国）</p>
+          <dl>
+            <dt>サービス</dt><dd>Firebase Authentication（ユーザーの認証、確認メールの送信）、Googleフォーム（お問い合わせの受付）</dd>
+            <dt>取り扱う情報</dt><dd>メールアドレス、Apple IDによる認証情報、アカウントの識別子、認証方式、IPアドレスなど、認証に必要な情報、およびお問い合わせフォームに入力されたメールアドレスとお問い合わせの内容</dd>
+            <dt>詳細</dt><dd><a class="ext" href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebaseのプライバシー情報</a>、<a class="ext" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleのプライバシーポリシー</a></dd>
+          </dl>
+        </div>
+        <div class="item">
+          <p class="nm">Railway Corporation（米国）</p>
+          <dl>
+            <dt>サービス</dt><dd>サーバーおよびデータベースのホスティング</dd>
+            <dt>取り扱う情報</dt><dd>第3条第1項から第3項までの情報（しおり、スポット、アカウントの識別子、アクセスログなど）</dd>
+            <dt>詳細</dt><dd><a class="ext" href="https://railway.com/legal/privacy" target="_blank" rel="noopener noreferrer">Railwayのプライバシーポリシー</a></dd>
+          </dl>
+        </div>
+        <div class="item">
+          <p class="nm">Functional Software, Inc.（Sentry）（米国）</p>
+          <dl>
+            <dt>サービス</dt><dd>エラー・クラッシュの監視</dd>
+            <dt>取り扱う情報</dt><dd>第3条第4項のエラー情報</dd>
+            <dt>詳細</dt><dd><a class="ext" href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">Sentryのプライバシーポリシー</a></dd>
+          </dl>
+        </div>
+        <div class="item">
+          <p class="nm">Apple Inc.（米国）</p>
+          <dl>
+            <dt>サービス</dt><dd>Appleマップ（MapKit）、場所の検索、Appleでサインイン</dd>
+            <dt>取り扱う情報</dt><dd>検索キーワード、地図上で指定した地点の緯度経度、地図の表示に必要な情報、Apple IDによる認証情報（ユーザーとAppleとの間で直接取り扱われます。）</dd>
+            <dt>詳細</dt><dd><a class="ext" href="https://www.apple.com/legal/privacy/jp/" target="_blank" rel="noopener noreferrer">Appleのプライバシーポリシー</a></dd>
+          </dl>
+        </div>
+      </div>
+    </li>
+    <li>前項の事業者は、日本国外（主に米国）に所在し、または日本国外にあるサーバーで情報を取り扱う場合があります。したがって、ユーザーの個人データが外国にある第三者に提供または保存されることがあります。外国における個人情報の保護に関する制度については、個人情報保護委員会のウェブサイトで公表されている情報をご参照ください。各事業者は、それぞれの規約やデータの取扱いに関する条件において、安全管理や目的外利用の制限に関する定めを置いており、運営者はその条件に従って各サービスを利用しています。ユーザーは、法令に基づく範囲で、事業者が講じている個人情報の保護のための措置に関する情報の提供を、第14条の窓口に求めることができます。ユーザーは、本サービスを利用することで、これらの取扱いに同意したものとみなします。</li>
+    <li>運営者は、委託先に個人データの取扱いを委託する場合、必要かつ適切な範囲で委託先を選定し、監督します。</li>
+    <li>外部サービスにおける情報の取扱いについては、前記の各提供者のプライバシーポリシー等をご確認ください。外部サービスにおける情報の取扱いは、各提供者の責任において行われます。ただし、運営者が委託先に対して負う監督上の責任を除きます。</li>
+    <li>運営者は、利用する事業者やサービスを変更することがあります。その場合は、本ポリシーを更新して周知します。</li>
+  </ol>
+</section>
+
+<section id="a7">
+  <h2><span class="no">第7条</span>保存期間と削除</h2>
+  <ol class="p">
+    <li>アカウントに関する情報およびユーザーデータは、アカウントが存続する間、保存します。</li>
+    <li>ユーザーが、匿名アカウント・登録アカウントを問わず、本アプリ内の削除機能からアカウントを削除した場合、運営者のサーバー上のアカウントに関する情報およびユーザーデータ（しおり、スポットなど）は削除され、認証サービス上の認証情報も削除されます。バックアップ等からの完全な削除には、一定の期間を要する場合があります。また、通信障害その他の事情により、削除が直ちに完了しない場合があります。</li>
+    <li>利用規約第6条第5項および第6項に基づき、ユーザーが既存のアカウントへの切り替えを選択した場合、切り替え前の匿名アカウントとそのユーザーデータは、運営者により削除されることがあります。</li>
+    <li>アクセスログおよびエラー情報は、第4条の利用目的の達成に必要な期間保存し、その後、削除し、または個人を特定できない形にします。</li>
+    <li>お問い合わせの内容およびメールアドレスは、運営者がアクセスを管理するGoogleアカウント上で保管し、対応や改善に必要な期間が経過した後、削除し、または個人を特定できない形にします。</li>
+    <li>前各項にかかわらず、法令に基づく保存義務や、紛争への対応その他正当な事由がある場合は、必要な範囲で一定の情報を保持することがあります。</li>
+  </ol>
+</section>
+
+<section id="a8">
+  <h2><span class="no">第8条</span>安全管理措置</h2>
+  <ol class="p">
+    <li>運営者は、個人データの漏えい、滅失または毀損の防止その他の安全管理のために、本サービスの規模および性質に応じて、次のような措置を講じています。
+      <ol class="i">
+        <li>本番環境における通信の暗号化（HTTPS）</li>
+        <li>すべてのAPIでの認証（認証サービスが発行したIDトークンの検証）と、ユーザーが自身のデータのみを操作できるアクセス制御</li>
+        <li>利用回数の制限による、不正アクセスおよび過度な負荷への対策</li>
+        <li>パスワードを運営者のサーバーに保存しない仕組みの採用</li>
+        <li>認証キーその他の秘密情報の適切な管理と、サーバー・データベースへのアクセス権限の限定</li>
+        <li>委託先の選定と監督</li>
+      </ol>
+    </li>
+    <li>個人データの漏えい等が発生し、個人情報保護法に基づく報告または通知が必要な場合は、同法に従い、個人情報保護委員会への報告およびユーザーへの通知を行います。</li>
+    <li>運営者は、以上の措置を講じていますが、情報の絶対的な安全性を保証するものではありません（利用規約第18条をご参照ください。）。</li>
+  </ol>
+</section>
+
+<section id="a9">
+  <h2><span class="no">第9条</span>ユーザーの権利と請求手続</h2>
+  <ol class="p">
+    <li>ユーザーは、運営者が保有する自身の保有個人データについて、個人情報保護法に基づき、次の請求をすることができます。
+      <ol class="i">
+        <li>利用目的の通知</li>
+        <li>開示（電磁的記録による提供を含みます。）</li>
+        <li>内容の訂正、追加または削除</li>
+        <li>利用の停止または消去</li>
+        <li>第三者への提供の停止</li>
+        <li>第三者提供記録の開示</li>
+      </ol>
+    </li>
+    <li>前項の請求は、第14条のお問い合わせフォームから申し出てください。運営者は、フォームに入力されたメールアドレス宛に返信し、必要に応じて追加の確認事項をお尋ねします。運営者は、ご本人であることおよび対象となるアカウントを確認したうえで、遅滞なく対応します。特に匿名アカウントについては、対象のアカウントを特定できる情報をご提示いただく必要があり、特定できない場合は、対応できないことがあります。</li>
+    <li>請求への対応に、現時点で手数料はかかりません。請求に応じない場合は、その旨をユーザーに通知し、理由の説明に努めます。</li>
+    <li>アカウントとユーザーデータの削除は、本アプリ内の削除機能から、いつでも行うことができます（利用規約第16条をご参照ください。）。</li>
+    <li>次のいずれかに該当する場合は、請求に応じないことがあります。
+      <ol class="i">
+        <li>ご本人であることまたは対象のアカウントを確認できない場合</li>
+        <li>ユーザーまたは第三者の生命、身体、財産その他の権利利益を害するおそれがある場合</li>
+        <li>運営者の業務の適正な実施に著しい支障を及ぼすおそれがある場合（正当な理由なく繰り返される請求や、バックアップデータ内のデータの個別削除など過度な技術的負担を要する請求を含みます。）</li>
+        <li>その他、法令により運営者が義務を負わない場合または法令に違反することとなる場合</li>
+      </ol></li>
+  </ol>
+</section>
+
+<section id="a10">
+  <h2><span class="no">第10条</span>位置情報の許可と情報提供の任意性</h2>
+  <ol class="p">
+    <li>位置情報（現在地）の利用は、端末の設定からいつでも変更できます。許可しない場合でも、現在地を使う機能以外の機能は利用できます。</li>
+    <li>ユーザーは、会員登録を行わず、匿名アカウントで本サービスを利用できます。ただし、匿名アカウントのデータは、利用規約第6条に定めるとおり、アプリの削除や端末の変更等により復元できなくなります。</li>
+    <li>個人情報の提供を希望されない場合は、アカウントを削除したうえで、本アプリの利用を中止してください。</li>
+  </ol>
+</section>
+
+<section id="a11">
+  <h2><span class="no">第11条</span>子どもの情報</h2>
+  <ol class="p">
+    <li>13歳未満の方は、本サービスを利用できません。運営者は、13歳未満の方の個人情報を取得したことが判明した場合、速やかに削除します。</li>
+    <li>未成年のユーザーは、利用規約に定めるとおり、親権者その他の法定代理人の同意を得たうえで本サービスを利用してください。</li>
+  </ol>
+</section>
+
+<section id="a12">
+  <h2><span class="no">第12条</span>Cookie・広告識別子等</h2>
+  <ol class="p">
+    <li>本アプリは、現時点では、ユーザーを追跡する目的でCookieや広告識別子（IDFA）を利用せず、App Tracking Transparencyの対象となる追跡も行っていません。</li>
+    <li>今後、広告の配信やアクセス解析等のためのSDKを導入する場合は、あらかじめ本ポリシーを改定し、法令およびAppleの定めに従って、必要な許可や同意を求めます。</li>
+  </ol>
+</section>
+
+<section id="a13">
+  <h2><span class="no">第13条</span>本ポリシーの変更</h2>
+  <ol class="p">
+    <li>運営者は、法令の改正や本サービスの内容の変更などに応じて、本ポリシーを変更することがあります。</li>
+    <li>運営者は、本ポリシーを変更する場合、変更後の内容と効力発生時期を、本アプリ上または本ポリシーを掲載するウェブページで周知します。ユーザーに重大な影響を与える変更は、効力発生時期の2週間前までに周知します。ただし、誤字脱字の修正など、ユーザーに不利益を与えない変更、または法令の制定・改廃への対応その他やむを得ない事情により緊急に変更する必要がある場合は、周知した時点で効力が生じるものとします。</li>
+    <li>法令上ユーザーの同意が必要となる変更を行う場合は、運営者が定める方法により、同意を取得します。</li>
+  </ol>
+</section>
+
+<section id="a14">
+  <h2><span class="no">第14条</span>お問い合わせ窓口</h2>
+  <p>本ポリシーおよび個人情報の取扱いに関するご意見、ご質問、苦情のお申出、および第9条の請求は、次の窓口までお願いいたします。</p>
+  <dl class="meta">
+    <dt>運営者</dt><dd>Naoki Mineo</dd>
+    <dt>窓口</dt><dd><a class="ext" href="https://forms.gle/ffAmcqnMaCj4Q1qNA" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a>（Googleフォームを利用しています。本アプリからもアクセスできます。）</dd>
+    <dt>ご注意</dt><dd>お問い合わせの際は、個人情報の取扱いに関するお問い合わせであることをご記入ください。</dd>
+    <dt>回答</dt><dd>回答には、内容によりお時間をいただく場合があります。</dd>
+  </dl>
+</section>
+
+</main>
+
+<p class="sign">以上</p>
+
+<footer class="end">
+  <p>運営者：Naoki Mineo</p>
+  <p>お問い合わせ：<a class="ext" href="https://forms.gle/ffAmcqnMaCj4Q1qNA" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a></p>
+  <p>2026年10月11日 制定</p>
+</footer>
+
+</div>
+</body>
+</html>
